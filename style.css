@@ -1,0 +1,452 @@
+/* DOCUMENT INFORMATION
+    - Document : Dégustations de vins*
+    - version : 1.0.0
+    - Author : Thierry
+*/
+
+/* COLORS
+    - defaut body text #eee
+    - h1  darkred
+    - h2  darked
+    - h3  darked
+    - p darkblue
+
+    - button
+    - button:hover
+    
+    - border
+*/
+
+/* FONTS
+    - Titre : Domine
+    - Paragrape : Satisfy
+    - default : san-sérif
+    - subtitle
+*/
+
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =SECTION
+    4. =COUPS DE COEUR
+    5. =DEGUSTATIONS
+    6. =EVENEMENTS
+    7. =FOOTER
+*/
+
+
+/* GLOBAL
+======================= */
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color:white;
+}
+
+h1, h2, h3 {
+    font-family: "Domine", "Arial", "sans-serif";
+    color: darkred;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 700;
+    word-spacing: 8px;
+}
+
+h1 {
+	padding: 20px;
+}
+
+h2{
+    padding: 20px;
+	text-align: center;
+}
+
+h3 {
+	padding-top: 10px;
+	text-align: center;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    width: 120px;
+    content: "  ";
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+p {
+	font-family: "Satisfy", "Arial", "sans-serif";
+	font-size: 23px;
+}
+
+.programme {
+    /* background-image: url(ressources/images/bois.jpg); */
+	/* background-color: #e0f1ff; */
+    background-image: radial-gradient(ellipse at center, #255f90, #daeef7);
+    background-size: cover;
+    max-width: 100%;
+    }
+
+.palm {
+    background-image: url(ressources/images/academie.png);
+    background-repeat:no-repeat;
+    background-size:100px;  
+}
+
+.titre1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/* HEADER
+======================= */
+
+header {
+    background-image:linear-gradient(    white, 
+                                         rgba(7,117,230,0.3)
+                                    ), 
+                                         url(ressources/images/grappes.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {    
+    position:absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-weight: 500;
+    color: crimson;
+}
+
+.home-title span {
+    font-weight: 700;
+}
+.home-title p {
+        color: #000000;
+}
+
+/* button 
+===================*/
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+	font-size: 23px;
+}
+
+.btn-full {
+   background-color: rgba(255, 255, 255, 0);
+   color: #000000;
+}
+
+.btn-full:hover {
+    background-color: #d6e5f0;
+    color: crimson;  
+}
+
+.button-center {
+    text-align: center;
+    }
+
+.marge {
+margin-left: 5em;
+}
+
+.marge1 {
+margin-left: 5.5em;
+}
+
+/* MENU 
+=============*/
+
+.navbar-brand {
+	font-family: "Domine", "Arial", "sans-serif";
+}
+
+a {
+	font-family: "Satisfy", "Arial", "sans-serif";
+	}
+
+/* EVENEMENTS
+====================== */
+
+.parchemin {
+    height: 90%;
+    background-color: #b7d1d6;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+
+/* COUPS DE COEUR
+=======================*/
+
+.coups-de-coeur, .photographie {
+    background-color: #c2d1de;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.vignette {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.vignette img {
+    display:block;
+    margin: 0 auto;
+    width: 100%;  
+}
+
+.vignette h3 {
+    text-align: center;
+}
+
+/*-- DEGUSTATIONS **/
+
+.etiquette {
+    text-align: center;
+	padding: 20px;
+	font-size: 40%;
+}
+
+.vin {
+    text-align: center;
+}
+
+.repas p {
+	text-align: center;
+	font-size: 140%;
+}
+
+li {
+	font-family: "Satisfy", "Arial", "sans-serif";
+	font-size: 22px;
+}
+
+/* FOOTER
+======================= */
+
+footer {
+    background-color: #747373;
+    height: 60px;  
+    padding: 20px 20px;
+}
+
+.copyright p {
+   text-align: center; 
+    color:white;
+}
+
+.copyright a {
+    color:white;
+}
+
+/*  EVENEMENTS
+===================*/
+.bouteille {
+    padding-top: 20px;
+}
+
+.degustations{   
+    padding-top: 10px;
+	}
+
+.titreliste {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.appareil img {
+	display:block;
+    margin: 0 auto;
+    width: 100px;  
+	height: 100px;
+}
+
+/*ARCHIVES
+=================*/
+
+.archives {
+	text-align: center;
+}
+
+/* TABLEAU
+=====================*/
+table.paleBlueRows {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #FFFFFF;
+  width: 90%;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 40px;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 2px;
+}
+table.paleBlueRows tbody td {
+  font-size: 13px;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #0B6FA4;
+  border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+table.paleBlueRows thead th:first-child {
+  border-left: none;
+}
+
+table.paleBlueRows tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+table.paleBlueRows tfoot td {
+  font-size: 14px;
+}
+/* CONTACT
+=================*/
+#contact {
+    background-color: #e0f1ff;
+	padding: 30px 0;
+	text-align: center;
+}
+	
+#contact p {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+label, input {
+	font-family: "Domine", "Arial", "sans-serif";
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 50px;
+	color:#777;
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 20px;
+	margin-right: 45px;
+	border: 2px solid #ddd;
+	border-radius: 20px;
+}
+
+input[type="email"] {
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid #ddd;
+	border-radius: 20px;
+}
+
+
+.button-3 {
+	color: #fff;
+	font-size:15px;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #02b8dd;
+	border-radius: 10px;
+	border-style: none; 
+}
+.button-3:hover {
+	color: #444;
+	background-color: #02b8dd;
+}
+
+textarea {
+	width: 800px;
+	height: 200px;
+}
+
+/* PAGE DEGUSTATION 
+======================*/
+
+.etoile {
+	 max-height: 10%;
+		 }
+
+/* PAGE COUP DE COEUR CHAMPAGNE 
+=========================*/
+
+body {
+	background-color: beige;
+}
+.repas {
+	display:block;
+    margin: 0 auto;
+    width: 70%;  
+	height: 50%;
+}
+
+.duval img {
+    display: block;
+	margin: 30px auto;
+	width: 210px;   
+	}
+
+/* PAGE NOTATION ETOILES 
+========================*/
+
+.listeEtoile ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+.listeEtoile ul li {
+			display:inline-block;
+			width: 16px;
+			text-align: left;
+			list-style-type: none;
+		}
+		
+.listeEtoile ul li img {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		
+#tableau-sondage{
+			font-family:verdana;
+			font-size:12px;
+		}
+		
+#tableau-sondage th{
+			font-size:13px;
+			border:solid 1px black;
+			padding:8px;
+			cursor:default;
+		}
+		
+#tableau-sondage td{
+			border:solid 1px black;
+			padding:12px 3px;
+			text-align:center;
+		}
+
